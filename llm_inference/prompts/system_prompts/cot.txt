@@ -1,0 +1,1 @@
+Reason step by step before answering. Write your answer in the following format: [REASONING] Therefore, the answer is [{{label_space}}]

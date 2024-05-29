@@ -1,0 +1,112 @@
+[
+    {
+        "id": 0,
+        "answer_choices": {
+            "positive": ["yes", "Yes"],
+            "negative": ["no", "No"]
+        },
+        "jinja": "Does the movie review below make someone want to watch it? \n\n{{text}}",
+        "is_cot": false,
+        "name": "sentiment_watch_movie",
+        "reference": ""
+    },
+    {
+        "id": 1,
+        "answer_choices": {
+            "positive": ["good", "Good", "positive"],
+            "negative": ["bad", "Bad", "negative"]
+        },
+        "jinja": "{{text}} How does the viewer feel about the movie? ",
+        "is_cot": false,
+        "name": "",
+        "reference": ""
+    },
+    {
+        "id": 2,
+        "answer_choices": {
+            "positive": ["yes", "Yes"],
+            "negative": ["no", "No"]
+        },
+        "jinja": "{{text}} Did the reviewer enjoy the movie? ",
+        "is_cot": false,
+        "name": "",
+        "reference": ""
+    },
+    {
+        "id": 3,
+        "answer_choices": {
+            "positive": ["yes", "Yes"],
+            "negative": ["no", "No"]
+        },
+        "jinja": "Does it seem like the reviewer who wrote this review liked the movie? \n\n{{text}}",
+        "is_cot": false,
+        "name": "did_reviewer_like",
+        "reference": ""
+    },
+    {
+        "id": 4,
+        "answer_choices": {
+            "positive": ["yes", "Yes"],
+            "negative": ["no", "No"]
+        },
+        "jinja": "Is the movie review below positive? \n\n{{text}}",
+        "is_cot": false,
+        "name": "sentiment_classification",
+        "reference": ""
+    },
+    {
+        "id": 5,
+        "answer_choices": {
+            "positive": ["good", "Good"],
+            "negative": ["bad", "Bad"]
+        },
+        "jinja": "{{text}} Did the reviewer find this movie good or bad?",
+        "is_cot": false,
+        "name": "Reviewer Opinion bad good choices",
+        "reference": ""
+    },
+    {
+        "id": 6,
+        "answer_choices": {
+            "positive": ["positive"],
+            "negative": ["negative"]
+        },
+        "jinja": "{{text}} \nIs this review positive or negative?",
+        "is_cot": false,
+        "name": "Sentiment with choices ",
+        "reference": ""
+    },
+    {
+        "id": 7,
+        "answer_choices": {
+            "positive": ["positive"],
+            "negative": ["negative"]
+        },
+        "jinja": "{{text}} This is definitely not a positive or negative review.",
+        "is_cot": false,
+        "name": "Negation template for positive and negative",
+        "reference": ""
+    },
+    {
+        "id": 8,
+        "answer_choices": {
+            "positive": ["yes", "Yes"],
+            "negative": ["no", "No"]
+        },
+        "jinja": "{{text}} Did the reviewer enjoy the movie?",
+        "is_cot": false,
+        "name": "Reviewer Enjoyment Yes No",
+        "reference": ""
+    },
+    {
+        "id": 9,
+        "answer_choices": {
+            "positive": ["good", "Good"],
+            "negative": ["bad", "Bad"]
+        },
+        "jinja": "{{text}} Did the reviewer find this movie good or bad?",
+        "is_cot": false,
+        "name": "Reviewer Opinion bad good choices",
+        "reference": ""
+    }
+]

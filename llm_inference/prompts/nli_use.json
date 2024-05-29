@@ -1,0 +1,121 @@
+[
+    {
+        "id": 0,
+        "answer_choices": {
+            "entailment": ["yes", "Yes"],
+            "neutral": ["maybe", "Maybe"],
+            "contradiction": ["no", "No"]
+        },
+        "jinja": "Given that {{premise}} Does it follow that {{hypothesis}} yes, no, or maybe?",
+        "is_cot": false,
+        "name": "does it follow that",
+        "reference": "Sanh et al. 2021"
+    },
+    {
+        "id": 1,
+        "answer_choices": {
+            "entailment": ["correct"],
+            "neutral": ["uncertain"],
+            "contradiction": ["incorrect"]
+        },
+        "jinja": "{{premise}} Using only the above description and what you know about the world, \"{{hypothesis}}\" is definitely correct, incorrect, or uncertain?",
+        "is_cot": false,
+        "name": "MNLI crowdsource",
+        "reference": "Adapted from Williams et al. 2018's instructions to crowdsourcing workers."
+    },
+    {
+        "id": 2,
+        "answer_choices": {
+            "entailment": ["true", "True"],
+            "neutral": ["maybe", "Maybe"],
+            "contradiction": ["false", "False"]
+        },
+        "jinja": "{{premise}}\nQuestion: {{hypothesis}} true, false, or maybe?",
+        "is_cot": false,
+        "name": "GPT-3 style",
+        "reference": "Same as reported in Figure G7 of the GPT-3 paper, except that there is no task identifying tokens like \"anli R1: \"."
+    },
+    {
+        "id": 3,
+        "answer_choices": {
+            "entailment": ["true", "True"],
+            "neutral": ["maybe", "Maybe"],
+            "contradiction": ["false", "False"]
+        },
+        "jinja": "Take the following as truth: {{premise}}\nThen the following statement: \"{{hypothesis}}\" is true, false, or maybe??",
+        "is_cot": false,
+        "name": "take the following as truth",
+        "reference": "Sanh et al. 2021"
+    },
+    {
+        "id": 4,
+        "answer_choices": {
+            "entailment": ["yes", "Yes"],
+            "neutral": ["maybe", "Maybe"],
+            "contradiction": ["no", "No"]
+        },
+        "jinja": "{{premise}} \n\nQuestion: Does this imply that \"{{hypothesis}}\"? Yes, no, or maybe?",
+        "is_cot": false,
+        "name": "does this imply",
+        "reference": "Sanh et al. 2021"
+    },
+    {
+        "id": 5,
+        "answer_choices": {
+            "entailment": ["yes", "Yes"],
+            "neutral": ["maybe", "Maybe"],
+            "contradiction": ["no", "No"]
+        },
+        "jinja": "Given {{premise}} Should we assume that \"{{hypothesis}}\" is true? Yes, no, or maybe?",
+        "is_cot": false,
+        "name": "should assume",
+        "reference": "Webson & Pavlick 2021"
+    },
+    {
+        "id": 6,
+        "answer_choices": {
+            "entailment": ["yes", "Yes"],
+            "neutral": ["maybe", "Maybe"],
+            "contradiction": ["no", "No"]
+        },
+        "jinja": "{{premise}} Based on the previous passage, is it true that \"{{hypothesis}}\"? Yes, no, or maybe?",
+        "is_cot": false,
+        "name": "based on the previous passage",
+        "reference": "Adapted from the BoolQ prompts in Schick & Sch\u00fctze 2021."
+    },
+    {
+        "id": 7,
+        "answer_choices": {
+            "entailment": ["yes", "Yes"],
+            "neutral": ["maybe", "Maybe"],
+            "contradiction": ["no", "No"]
+        },
+        "jinja": "{{premise}} Are we justified in saying that \"{{hypothesis}}\"? yes, no, or maybe?",
+        "name": "justified in saying",
+        "reference": "Webson & Pavlick 2021"
+    },
+    {
+        "id": 8,
+        "answer_choices": {
+            "entailment": ["always", "Always"],
+            "neutral": ["sometimes", "Sometimes"],
+            "contradiction": ["never", "Never"]
+        },
+        "jinja": "Suppose it's true that {{premise}} Then, is \"{{hypothesis}}\" always, sometimes, or never true?",
+        "is_cot": false,
+        "name": "always/sometimes/never",
+        "reference": "Sanh et al. 2021"
+    },
+    {
+        "id": 9,
+        "answer_choices": {
+            "entailment": ["yes", "Yes"],
+            "neutral": ["maybe", "Maybe"],
+            "contradiction": ["no", "No"]
+        },
+        "jinja": "Given {{premise}} Is it guaranteed true that \"{{hypothesis}}\"? yes, no, or maybe?",
+        "is_cot": false,
+        "name": "guaranteed true",
+        "reference": "Webson & Pavlick 2021"
+    }
+]
